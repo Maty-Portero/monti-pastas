@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-char: #1c1917;
+  --color-lava: #ff5722;
+  --color-lava-dark: #c1350f;
+  --color-cream: #fff4e6;
+  --color-basil: #4f7942;
+  --color-parmesan: #f4c95d;
+
+  --font-display: "Baloo 2", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+body {
+  background-color: var(--color-char);
+  color: var(--color-cream);
+  font-family: var(--font-body);
+}
+
+.gradiente-lava {
+  background: linear-gradient(135deg, var(--color-lava) 0%, var(--color-lava-dark) 100%);
+}
