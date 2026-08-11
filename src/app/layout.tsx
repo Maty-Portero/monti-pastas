@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Baloo_2, Manrope, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import BotonWhatsapp from "@/components/BotonWhatsapp";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import BotonWhatsapp from "../components/BotonWhatsapp";
 
 const baloo = Baloo_2({
   subsets: ["latin"],

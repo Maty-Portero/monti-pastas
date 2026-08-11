@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Header() {
@@ -8,11 +9,17 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-[var(--color-char)] border-b-2 border-[var(--color-lava)]">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-5 py-3">
-        <Link
-          href="/"
-          className="font-[family-name:var(--font-display)] font-extrabold text-2xl text-[var(--color-cream)]"
-        >
-          Monti <span className="text-[var(--color-lava)]">🌋</span>
+        <Link href="/" className="flex items-center">
+          <div className="relative w-14 h-14 rounded-full bg-[var(--color-cream)] overflow-hidden shrink-0">
+            <div className="absolute inset-0 flex items-center justify-center p-2">
+              <Image
+                src="/images/logo.png"
+                alt="Monti Agronomia"
+                fill
+                className="object-contain"
+              />
+            </div>
+          </div>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">

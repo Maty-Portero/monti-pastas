@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-[var(--color-char)]">
@@ -6,12 +8,6 @@ export default function Hero() {
           <span className="inline-block font-[family-name:var(--font-mono)] text-xs text-[var(--color-parmesan)] uppercase tracking-widest mb-4">
             Bar de Pastas · Agronomía
           </span>
-
-          <h1 className="font-[family-name:var(--font-display)] font-extrabold text-5xl md:text-6xl leading-[1.0] text-[var(--color-cream)]">
-            El volcán de ñoquis
-            <br />
-            <span className="text-[var(--color-lava)]">te espera</span> 🌋
-          </h1>
 
           <p className="mt-6 text-lg text-[var(--color-cream)]/80 max-w-md">
             Menú completo, promos del día y pedidos directos. Sin comisiones, sin vueltas.
@@ -33,18 +29,17 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Sello "gota de lava" con el rating */}
+        {/* Sello con el logo real */}
         <div className="flex justify-center md:justify-end">
-          <div className="w-52 h-52 rounded-full gradiente-lava flex flex-col items-center justify-center text-center shadow-2xl">
-            <span className="font-[family-name:var(--font-display)] font-extrabold text-5xl text-[var(--color-cream)]">
-              4.5
-            </span>
-            <span className="text-[var(--color-parmesan)] text-sm">★★★★★</span>
-            <span className="font-[family-name:var(--font-mono)] text-[10px] uppercase tracking-wider mt-1 text-[var(--color-cream)]/80">
-              1.863 opiniones
-              <br />
-              Google Maps
-            </span>
+          <div className="relative w-56 h-56 rounded-full border-4 border-[var(--color-brass)] bg-[var(--color-cream)] rotate-[-6deg] shadow-2xl overflow-hidden">
+            <div className="absolute inset-0 flex items-center justify-center p-10">
+              <Image
+                src="/images/logo.png"
+                alt="Logo Monti Pastas"
+                fill
+                className="object-contain"
+              />
+            </div>
           </div>
         </div>
       </div>

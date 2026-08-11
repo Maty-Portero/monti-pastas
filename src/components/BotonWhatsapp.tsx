@@ -5,7 +5,7 @@ export default function BotonWhatsapp() {
   );
 
   return (
-    
+    <a
       href={`https://wa.me/${numero}?text=${mensaje}`}
       target="_blank"
       rel="noopener noreferrer"
